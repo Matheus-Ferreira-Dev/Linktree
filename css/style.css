@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto sans';
+}
+
+:root {
+    --bg-main: #100B00;
+    --button: #031A6B;
+    --secondary: #FF0000;
+    --text: #FCF6B1;
+    --linear-gradient: linear-gradient(90deg, hsla(227, 95%, 22%, 1) 0%, hsla(41, 100%, 3%, 1) 100%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--linear-gradient);
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+}
+
+header .profile img {
+    width: 130px;
+    border-radius: 100%;
+    border: 5px solid var(--secondary);
+    box-shadow: 0 0 50px var(--secondary);
+}
+
+.profile h1 {
+    font-size: 3.2rem;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+.profile p {
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.social {
+    margin-top: 3rem;
+}
+
+.social ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10rem;
+    justify-content: center;
+}
+
+.social i {
+    font-size: 3.5rem;
+    color: var(--text);
+    gap: 2rem;
+    transition: .3s linear ease-in-out;
+}
+
+.social i:hover {
+    transform: scale(1.3);
+    color: var(--secondary);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 5rem;
+    margin-top: 1rem;
+}
+
+.buttons ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttons ul li {
+    padding: 1rem 2rem;
+}
+
+.buttons ul li a {
+    display: inline-block;
+    color: #fff;
+    background-color: var(--secondary);
+    text-decoration: none;
+    padding: 2rem 3rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    box-shadow: 0 0 30px var(--secondary);
+    width: 500px;
+    transition: .3s ease-in-out;
+}
+
+.buttons ul li a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 50px var(--secondary);
+    font-size: 2rem;
+}
+
+@media (max-width: 800px) {
+    header {
+    height:60vh;
+    }
+
+    .buttons ul li a {
+        width: 250px;
+    }
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 1450px) {
+    header {
+        height: 50vh;
+    }
+}
